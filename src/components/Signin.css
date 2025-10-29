@@ -1,0 +1,113 @@
+/* Full page background */
+.signin_page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;   /* full height */
+  width: 100vw;    /* full width */
+  background: #f9f9f9;
+}
+
+/* Card */
+.signin_card {
+  background: #fff;
+  padding: 30px 25px;
+  border-radius: 16px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  height: 500px;
+  text-align: center;
+  position: relative;
+}
+
+/* Close button */
+.close_btn {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-size: 20px;
+  cursor: pointer;
+  color: #444;
+}
+
+/* Title + subtitle */
+.signin_card h2 {
+  margin-top: 10px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #000;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+/* Input wrapper */
+label {
+  display: block;
+  font-size: 14px;
+  color: #333;
+  text-align: left;
+  margin-bottom: 6px;
+}
+
+.input_wrapper {
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid #004aad;
+  padding: 6px 0;
+  margin-bottom: 50px;
+}
+
+.country_code {
+  margin-right: 8px;
+  font-weight: bold;
+  color: #000;
+}
+
+input {
+  border: none;
+  outline: none;
+  flex: 1;
+  font-size: 14px;
+  padding: 6px;
+}
+
+/* Sign In button */
+.signin_btn {
+  width: 100%;
+  background: #b9deed;   /* light blue (disabled) */
+  color: #fff;
+  border: none;
+  padding: 12px 0;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: not-allowed;
+  margin-bottom: 15px;
+  transition: background 0.3s ease, cursor 0.3s ease;
+}
+
+.signin_btn.active {
+  background: #004aad;   /* dark blue when valid */
+  cursor: pointer;
+}
+
+.signin_btn.active:hover {
+  background: #003580;
+}
+
+/* Footer text */
+.footer_text {
+  font-size: 12px;
+  color: #666;
+  line-height: 1.4;
+}
+
+.footer_text a {
+  color: #004aad;
+  text-decoration: none;
+  font-weight: bold;
+}
